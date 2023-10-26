@@ -1,5 +1,8 @@
+import 'package:first_project/form.dart';
 import 'package:flutter/material.dart';
 import 'second_page.dart';
+import 'graph.dart';
+import 'form.dart';
 
 void main() {
   runApp(const MyApp());
@@ -96,7 +99,23 @@ class _MyHomePageState extends State<MyHomePage> {
                   MaterialPageRoute(builder: (context) => SecondPage()),
                 );
               },
-              child: const Text('Action 2')),
+              child: const Text('Review')),
+              TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => MyGraph()),
+                );
+              },
+              child: const Text('The Graph')),
+              TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => MyForm()),
+                );
+              },
+              child: const Text('The Form'))
         ],
       ),
       body: Center(
