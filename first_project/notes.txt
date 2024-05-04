@@ -1,2 +1,3 @@
 test, this is for contribution graph haha.
 clone to pc
+changed notes manually from the file.
